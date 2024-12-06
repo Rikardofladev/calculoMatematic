@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometria - Calculadora Matemática</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Calculadora Matemática</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="algebra.html">Álgebra</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calculo.html">Cálculo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="geometria.html">Geometria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="estatistica.html">Estatística</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trigonometria.html">Trigonometria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="matrizes.html">Matrizes</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>Geometria</h1>
+        <section id="triangle-area" class="mb-5">
+            <h2>Área de um Triângulo</h2>
+            <form id="triangle-form">
+                <div class="form-group">
+                    <label for="area-triangle">Insira a base e a altura do triângulo (formato: 8, 5)</label>
+                    <input type="text" class="form-control" id="area-triangle" placeholder="Ex: 8, 5">
+                </div>
+                <button type="button" class="btn btn-primary" onclick="solveTriangleArea()">Resolver</button>
+                <div id="triangle-result" class="mt-3"></div>
+            </form>
+            <p class="mt-3">A área de um triângulo é calculada usando a fórmula A = (base * altura) / 2. A base e a altura devem ser fornecidas para calcular a área.</p>
+        </section>
+
+        <section id="circle-area" class="mb-5">
+            <h2>Área de um Círculo</h2>
+            <form id="circle-form">
+                <div class="form-group">
+                    <label for="radius">Insira o raio do círculo</label>
+                    <input type="text" class="form-control" id="radius" placeholder="Ex: 5">
+                </div>
+                <button type="button" class="btn btn-primary" onclick="solveCircleArea()">Resolver</button>
+                <div id="circle-result" class="mt-3"></div>
+            </form>
+            <p class="mt-3">A área de um círculo é calculada usando a fórmula A = π * raio². O raio deve ser fornecido para calcular a área.</p>
+        </section>
+
+        <section id="sphere-volume" class="mb-5">
+            <h2>Volume de uma Esfera</h2>
+            <form id="sphere-form">
+                <div class="form-group">
+                    <label for="sphere-radius">Insira o raio da esfera</label>
+                    <input type="text" class="form-control" id="sphere-radius" placeholder="Ex: 5">
+                </div>
+                <button type="button" class="btn btn-primary" onclick="solveSphereVolume()">Resolver</button>
+                <div id="sphere-result" class="mt-3"></div>
+            </form>
+            <p class="mt-3">O volume de uma esfera é calculado usando a fórmula V = (4/3) * π * raio³. O raio deve ser fornecido para calcular o volume.</p>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
